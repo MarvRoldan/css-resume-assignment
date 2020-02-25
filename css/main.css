@@ -100,6 +100,11 @@
     word-wrap: normal !important;
 }
 
+.hide-me {
+    list-style: none;
+    height: 0;
+}
+
 body {
     font-family: 'Ostrich Sans', 'Times New Roman', serif;
     border: 3px solid rgb(202, 200, 200);
