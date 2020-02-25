@@ -1,4 +1,4 @@
-[role="boarder"] {
+/* [role="boarder"] {
     width: 650px;
     height: 950px;
     background: white;
@@ -17,58 +17,119 @@
     border-right: 2px solid #e6e6e6;
     border-left: 2px solid #e6e6e6;
     border-bottom: 2px solid #e6e6e6;
+} */
+@font-face {
+    font-family: 'Ostrich Sans';
+    src:
+        url('../fonts/ostrich-sans/ostrich-regular.ttf'),
+        url('../fonts/ostrich-sans/ostrich-regular.ttf') format('truestyle'),
+        url('OstrichSans-Medium.woff2') format('woff2'),
+        url('OstrichSans-Medium.woff') format('woff'),
+        url('OstrichSans-Medium.svg#OstrichSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: 
+        url('OstrichSans-Heavy.woff2') format('woff2'),
+        url('OstrichSans-Heavy.woff') format('woff'),
+        url('OstrichSans-Heavy.svg#OstrichSans-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: 
+        url('OstrichSans-Bold.woff2') format('woff2'),
+        url('OstrichSans-Bold.woff') format('woff'),
+        url('OstrichSans-Bold.svg#OstrichSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: 
+        url('OstrichSans-Light.woff2') format('woff2'),
+        url('OstrichSans-Light.woff') format('woff'),
+        url('OstrichSans-Light.svg#OstrichSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: 
+        url('OstrichSans-Black.woff2') format('woff2'),
+        url('OstrichSans-Black.woff') format('woff'),
+        url('OstrichSans-Black.svg#OstrichSans-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ostrich Sans Dashed';
+    src: 
+        url('OstrichSansDashed-Medium.woff2') format('woff2'),
+        url('OstrichSansDashed-Medium.woff') format('woff'),
+        url('OstrichSansDashed-Medium.svg#OstrichSansDashed-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ostrich Sans';
+    src: 
+        url('OstrichSans-Medium.woff2') format('woff2'),
+        url('OstrichSans-Medium.woff') format('woff'),
+        url('OstrichSans-Medium.svg#OstrichSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ostrich Sans Rounded';
+    src: 
+        url('OstrichSansRounded-Medium.woff2') format('woff2'),
+        url('OstrichSansRounded-Medium.woff') format('woff'),
+        url('OstrichSansRounded-Medium.svg#OstrichSansRounded-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
 }
 
 body {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Ostrich Sans', 'Times New Roman', serif;
+    border: 3px solid rgb(202, 200, 200);
 
-}
-
-.home-header {
-    font-weight: lighter;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 h1 {
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-nav a:hover {
-    width: auto;
-    max-width: 600px;
-    margin: 16px 16px;
-    color:blue;
+nav {
+    text-align: center;
+    background-color: aqua;
+    margin-bottom: 50px;
+    
 }
 
 nav ul {
-    text-align: center;
-    padding: 0;
+    
 }
 
 nav ul li {
     display: inline-block;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-.main-summary {
-    font-size: large;
-    margin-top: 50px;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-img {
-    float: left;
-    margin-left: 16px;
-    margin-right: 16px;
-}
-
-footer {
-    position: relative;
-    text-align: right;
-    bottom: -315px;
 }
