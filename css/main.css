@@ -87,9 +87,9 @@
     font-size: 25px;
 }
 
-body > * { 
+/* body > * { 
     border: 2px solid black;
-}
+} */
 
 .screen-reader-text {
     border: 0;
@@ -109,17 +109,22 @@ body > * {
     height: 0;
 }
 
+body > * { 
+    border: 2px solid black;
+}
+
 body {
     background-image: url( '../img/Banner.jpg' );
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
 
     display: grid;
     grid-template-columns: 100%; 
-    grid-template-rows: 40vh 60vh auto auto auto auto auto;
+    grid-template-rows: 50vh auto auto auto auto auto;
     grid-template-areas: 
-        "name" 
-        "nav"
+        "nav" 
+        "name"
         "bio"
         "experience"
         "education"
@@ -127,27 +132,36 @@ body {
         "socials"           
 }
 
-.name { grid-area: nav; }
-.nav { grid-area: name; }
+.nav { 
+    grid-area: nav; 
+    overflow: hidden;
+    background-color: rgb( 88, 214, 141, 0.50);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;}
+    
+.name { grid-area: name; }
 .bio { grid-area: bio; }
 .experience { grid-area: experience; }
 .education { grid-area: education; }
 .contact { grid-area: contact; }
 .socials { grid-area: socials; }
 
-.nav {
-    overflow: hidden;
-    background-color: rgb( 88, 214, 141, 0.50);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: right;
-}
 
 .nav li{
     display: inline;
 }
 
-#article-1 {
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(88, 214, 141)
+}
+
+#article-1,
+#article-3{
     background-color: white;
 }
