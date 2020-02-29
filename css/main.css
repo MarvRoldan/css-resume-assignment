@@ -1,95 +1,16 @@
-@font-face {
-    font-family: 'Ostrich Sans';
-    src:
-        url('../fonts/ostrich-sans/ostrich-regular.ttf'),
-        url('../fonts/ostrich-sans/ostrich-regular.ttf') format('truestyle'),
-        url('OstrichSans-Medium.woff2') format('woff2'),
-        url('OstrichSans-Medium.woff') format('woff'),
-        url('OstrichSans-Medium.svg#OstrichSans-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ostrich Sans';
-    src: 
-        url('OstrichSans-Heavy.woff2') format('woff2'),
-        url('OstrichSans-Heavy.woff') format('woff'),
-        url('OstrichSans-Heavy.svg#OstrichSans-Heavy') format('svg');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ostrich Sans';
-    src: 
-        url('OstrichSans-Bold.woff2') format('woff2'),
-        url('OstrichSans-Bold.woff') format('woff'),
-        url('OstrichSans-Bold.svg#OstrichSans-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ostrich Sans';
-    src: 
-        url('OstrichSans-Light.woff2') format('woff2'),
-        url('OstrichSans-Light.woff') format('woff'),
-        url('OstrichSans-Light.svg#OstrichSans-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ostrich Sans';
-    src: 
-        url('OstrichSans-Black.woff2') format('woff2'),
-        url('OstrichSans-Black.woff') format('woff'),
-        url('OstrichSans-Black.svg#OstrichSans-Black') format('svg');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ostrich Sans Dashed';
-    src: 
-        url('OstrichSansDashed-Medium.woff2') format('woff2'),
-        url('OstrichSansDashed-Medium.woff') format('woff'),
-        url('OstrichSansDashed-Medium.svg#OstrichSansDashed-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ostrich Sans';
-    src: 
-        url('OstrichSans-Medium.woff2') format('woff2'),
-        url('OstrichSans-Medium.woff') format('woff'),
-        url('OstrichSans-Medium.svg#OstrichSans-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Ostrich Sans Rounded';
-    src: 
-        url('OstrichSansRounded-Medium.woff2') format('woff2'),
-        url('OstrichSansRounded-Medium.woff') format('woff'),
-        url('OstrichSansRounded-Medium.svg#OstrichSansRounded-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro', Times, serif;
     font-size: 20px;
 }
 
-/*body > * { 
+/* body > * { 
     border: 2px solid black;
-}*/
+} */
 
 body {
     display: grid;
@@ -102,7 +23,7 @@ body {
         "experience"
         "education"
         "contact"
-        "socials"           
+        "socials"
 }
 
 .screen-reader-text {
@@ -123,11 +44,12 @@ body {
     height: 0;
 }
 
-.nav { 
+.nav {
     overflow: hidden;
     background-color: #1F363D;
     position: fixed;
     top: 0;
+    height: 5%;
     width: 100%;
     text-align: right;
 }
@@ -138,7 +60,9 @@ body {
 
 #name { 
     grid-area: name; 
-    background-image: url( '../img/Banner.jpg' );
+    background-image: 
+        linear-gradient(90deg, rgba(112,169,161,0.30) 8%, rgba(158,193,163,0.30) 30%, rgba(207,224,195,0.30) 68%),
+        url( '../img/Banner.jpg' );
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -154,11 +78,15 @@ body {
 #logos { 
     grid-area: logos;
     text-align: center;
+    border: 2px solid #E5E8E8;
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 
 #logos ul li {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 36px;
 }
 
 #logos .fas {
@@ -177,10 +105,13 @@ body {
 
 #bio {
     grid-area: bio;
-    background-color: #9EC1A3
 }
 
-#experience { grid-area: experience; }
+#experience { 
+    grid-area: experience; 
+    background-color: #CFE0C3;
+}
+
 #education { grid-area: education; }
 #contact { grid-area: contact; }
 #socials { grid-area: socials; }
