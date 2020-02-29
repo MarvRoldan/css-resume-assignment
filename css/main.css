@@ -105,6 +105,18 @@ body {
 
 #bio {
     grid-area: bio;
+    margin-top: 16px;
+}
+
+#bio h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#bio p {
+    margin-right: 36px;
+    margin-left: 36px;
 }
 
 #experience { 
