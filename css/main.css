@@ -87,9 +87,24 @@
     font-size: 25px;
 }
 
-/* body > * { 
+body > * { 
     border: 2px solid black;
-} */
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-template-rows: 70vh auto auto auto auto auto;
+    grid-template-areas: 
+        "nav" 
+        "name"
+        "logos"
+        "bio"
+        "experience"
+        "education"
+        "contact"
+        "socials"           
+}
 
 .screen-reader-text {
     border: 0;
@@ -109,29 +124,6 @@
     height: 0;
 }
 
-body > * { 
-    border: 2px solid black;
-}
-
-body {
-    background-image: url( '../img/Banner.jpg' );
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-
-    display: grid;
-    grid-template-columns: 100%; 
-    grid-template-rows: 50vh auto auto auto auto auto;
-    grid-template-areas: 
-        "nav" 
-        "name"
-        "bio"
-        "experience"
-        "education"
-        "contact"
-        "socials"           
-}
-
 .nav { 
     grid-area: nav; 
     overflow: hidden;
@@ -142,6 +134,7 @@ body {
     text-align: right;}
     
 .name { grid-area: name; }
+.logos { grid-area: logos; }
 .bio { grid-area: bio; }
 .experience { grid-area: experience; }
 .education { grid-area: education; }
@@ -154,11 +147,16 @@ body {
 }
 
 h1 {
+    background-image: url( '../img/Banner.jpg' );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 50px;
-    color: rgb(88, 214, 141)
+    color: #1F363D;
 }
 
 #article-1,
