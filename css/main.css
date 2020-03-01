@@ -105,23 +105,22 @@ body {
 }
 
 #logos ul li {
-    display: inline-block;
-    margin-top: 10px;
+   display: inline-block;
 }
 
 #logos .fas {
     color: #40798C;
     font-size: 50px;
-    margin-top: 25px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 #logos p {
     font-size: 20px;
-    margin-right: 50px;
+    margin-right: 30px;
     margin-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 
@@ -229,7 +228,9 @@ body {
 #contact form {
     border: 2px solid gray;
     border-radius: 1%;
-    margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
     width: 95%; 
     height: 75%;
     justify-self: center;
@@ -278,45 +279,61 @@ button {
     margin-right: 28px;
 }
 
-@media screen and ( min-width: 600px ) {
+@media screen and ( min-width: 500px ) {
     body {
         display: grid;
-        grid-template-columns: 50% 50%; 
-        grid-template-rows: 70vh 15vh auto auto auto auto 50vh auto;
+        grid-template-columns: 100%; 
+        grid-template-rows: 70vh auto auto auto auto auto auto  auto auto;
         grid-template-areas:  
-            "name name"
-            "logos logos"
-            "bio bio"
-            "about-picture about-picture"
-            "experience experience"
-            "experience-picture education"
-            "contact contact"
-            "socials socials"
+            "name"
+            "logos"
+            "bio"
+            "about-picture"
+            "experience"
+            "experience-picture"
+            "education"
+            "contact"
+            "socials"
     }
 }
 
 @media screen and ( min-width: 1024px ) {
-    body > * { 
-        border: 2px solid black;
-    }
-
+    
     body {
         display: grid;
         grid-template-columns: 50% 50%; 
-        grid-template-rows: 70vh 15vh auto auto auto auto 50vh auto;
+        grid-template-rows: 35vw auto auto auto auto auto auto;
         grid-template-areas:  
             "name name"
             "logos logos"
             "bio bio"
-            "about-picture about-picture"
-            "experience experience"
+            "experience about-picture"
             "experience-picture education"
             "contact contact"
             "socials socials"
     }
 
-    #about-picture {
-      background-image: url(../img/About-Large.jpg);
-      background-size: cover;
+    #logos .fas {
+        font-size: 70px;
+        margin-top: 40px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    
+    #logos p {
+        font-weight: lighter;
+        font-size: 30px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+
+    #bio p {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    #about-picture img {
+        margin-top: -8px;
     }
 }
