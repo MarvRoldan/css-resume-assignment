@@ -15,13 +15,14 @@
 body {
     display: grid;
     grid-template-columns: 100%; 
-    grid-template-rows: 70vh 15vh auto auto auto auto 50vh auto;
+    grid-template-rows: 70vh 15vh auto auto auto auto auto 50vh auto;
     grid-template-areas:  
         "name"
         "logos"
         "bio"
         "about-picture"
         "experience"
+        "experience-picture"
         "education"
         "contact"
         "socials"
@@ -170,6 +171,15 @@ body {
     margin-left: 36px;
     font-size: 20px;
     letter-spacing: 0.04em;
+}
+
+#experience-picture {
+    grid-area: experience-picture;
+}
+
+#experience-picture img {
+    max-width: 100%;
+    height: auto;
 }
 
 #education { 
