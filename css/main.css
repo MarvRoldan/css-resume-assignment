@@ -111,19 +111,21 @@ body {
 
 #bio h2 {
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 70px;
 }
 
 #bio p {
     margin-right: 36px;
+    margin-bottom: 30px;
     margin-left: 36px;
-    font-size: 32px;
+    font-size: 25px;
     letter-spacing: 0.04em;
 }
 
 #about-picture {
     grid-area: about-picture;  
+    margin-bottom: -5px;
 }
 
 #about-picture img {
@@ -136,6 +138,59 @@ body {
     background-color: #CFE0C3;
 }
 
-#education { grid-area: education; }
-#contact { grid-area: contact; }
+#experience h2, #education h2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+#experience h3, #education h3 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #40798C;
+    margin-bottom: 0;
+}
+
+#experience h4 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+#experience p, #education p {
+    margin-right: 36px;
+    margin-bottom: 16px;
+    margin-left: 36px;
+    font-size: 25px;
+    letter-spacing: 0.04em;
+}
+
+#education { 
+    grid-area: education; 
+}
+
+#education h4 {
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+#contact { 
+    grid-area: contact;
+    background-color: #F4F6F6; 
+}
+
+#contact h2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+#contact textarea {
+    resize: none;
+}
+
 #socials { grid-area: socials; }
