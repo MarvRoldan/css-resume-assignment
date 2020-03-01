@@ -138,7 +138,8 @@ body {
     background-color: #CFE0C3;
 }
 
-#experience h2, #education h2 {
+#experience h2, 
+#education h2 {
     margin-top: 16px;
     margin-bottom: 16px;
     text-align: center;
@@ -146,20 +147,24 @@ body {
     font-size: 70px;
 }
 
-#experience h3, #education h3 {
+#experience h3, 
+#education h3 {
     font-weight: bold;
     font-size: 40px;
     color: #40798C;
+    margin-left: 10px;
     margin-bottom: 0;
 }
 
 #experience h4 {
     font-size: 25px;
     color: white;
+    margin-left: 10px;
     margin-bottom: 16px;
 }
 
-#experience p, #education p {
+#experience p, 
+#education p {
     margin-right: 36px;
     margin-bottom: 16px;
     margin-left: 36px;
@@ -173,6 +178,7 @@ body {
 
 #education h4 {
     font-size: 25px;
+    margin-left: 10px;
     margin-bottom: 16px;
 }
 
@@ -190,14 +196,21 @@ body {
 }
 
 #contact form {
-    margin-top: 30px;
-    margin-right: 50px;
-    margin-left: 50px;
-    justify-self: center; /* Horizontal position (start, center, end.) */
-    align-self: center; /* Vertical position (start, center, end.) */
+    border: 2px solid gray;
+    border-radius: 1%;
+    margin-left: 10px;
+    width: 95%; 
+    height: 75%;
+    justify-self: center;
+    align-self: center;
+}
+
+#contact label {
+    display: block;
 }
 
 #contact textarea {
+    display: block;
     resize: none;
 }
 
