@@ -15,11 +15,12 @@
 body {
     display: grid;
     grid-template-columns: 100%; 
-    grid-template-rows: 70vh 15vh auto auto auto auto auto;
+    grid-template-rows: 70vh 15vh auto auto auto auto auto auto;
     grid-template-areas:  
         "name"
         "logos"
         "bio"
+        "about-picture"
         "experience"
         "education"
         "contact"
@@ -74,7 +75,6 @@ body {
     color: #40798C;
 }
 
-
 #logos { 
     grid-area: logos;
     text-align: center;
@@ -92,6 +92,7 @@ body {
 #logos .fas {
     color: #40798C;
     font-size: 50px;
+    margin-top: 25px;
     margin-right: 50px;
     margin-left: 50px;
 }
@@ -117,6 +118,17 @@ body {
 #bio p {
     margin-right: 36px;
     margin-left: 36px;
+    font-size: 32px;
+    letter-spacing: 0.04em;
+}
+
+#about-picture {
+    grid-area: about-picture;  
+}
+
+#about-picture img {
+    max-width: 100%;
+    height: auto;
 }
 
 #experience { 
