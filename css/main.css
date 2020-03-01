@@ -240,6 +240,10 @@ body {
     margin-top: 10px;
 }
 
+#contact input:focus {
+    background-color: #CFE0C3;
+}
+
 #contact textarea {
     margin-left: 20px;
     display: block;
