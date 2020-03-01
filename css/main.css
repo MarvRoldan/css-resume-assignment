@@ -106,7 +106,7 @@ body {
 
 #logos ul li {
     display: inline-block;
-    margin-top: 36px;
+    margin-top: 10px;
 }
 
 #logos .fas {
@@ -118,8 +118,9 @@ body {
 }
 
 #logos p {
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 50px;
+    margin-bottom: 50px;
     margin-left: 50px;
 }
 
@@ -149,8 +150,9 @@ body {
 }
 
 #about-picture img {
+    background-size: cover;
     max-width: 100%;
-    height: auto;
+    height: auto
 }
 
 #experience { 
@@ -274,4 +276,47 @@ button {
     font-size: xx-large;
     margin-top: 10px;
     margin-right: 28px;
+}
+
+@media screen and ( min-width: 600px ) {
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: 70vh 15vh auto auto auto auto 50vh auto;
+        grid-template-areas:  
+            "name name"
+            "logos logos"
+            "bio bio"
+            "about-picture about-picture"
+            "experience experience"
+            "experience-picture education"
+            "contact contact"
+            "socials socials"
+    }
+}
+
+@media screen and ( min-width: 1024px ) {
+    body > * { 
+        border: 2px solid black;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%; 
+        grid-template-rows: 70vh 15vh auto auto auto auto 50vh auto;
+        grid-template-areas:  
+            "name name"
+            "logos logos"
+            "bio bio"
+            "about-picture about-picture"
+            "experience experience"
+            "experience-picture education"
+            "contact contact"
+            "socials socials"
+    }
+
+    #about-picture {
+      background-image: url(../img/About-Large.jpg);
+      background-size: cover;
+    }
 }
